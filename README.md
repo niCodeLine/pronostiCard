@@ -6,7 +6,9 @@ What I use in my AI (Artificial Idiot) to get the weather of my, or any location
 
 Since the package is called _pornos_ (my keyboard is half working and I misspelled *pronos*), I call the
 function _tico_, forming then the word _pronos.tico_ (or _pornos.tico_ in this case), meaning forecast in spanish.  
-It checks if the input _lugar_ (place) is a name or coordinates of some place and continues with:
+  
+
+It checks if the input _lugar_ (place) is a name or the coordinates of some place and continues with:
 
 ```python
 jsonData = obtener_pronostico(location = 'mackay')
