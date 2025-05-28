@@ -7,7 +7,7 @@ import requests
 from playwright.sync_api import sync_playwright
 
 from for_the_record import Lectura
-# from recordat import numero_a_diaSemana, numero_a_mes # conversiones
+from recordat import numero_a_diaSemana, numero_a_mes # conversiones
 
 from constants import carpeta, apikeyOpenWeather # aqui guardo valores generales, como la ubicacion "carpeta" donde están todos los achivo
 
@@ -99,7 +99,7 @@ def sacar_screenshot(html: str, nombreImagen: str = 'img', file: bool = False):
     
     return path
 
-def obtener_pronostico(location: str = None, coordinates: tuple[float,float]= None) -> dict:
+def obtener_pronostico(*, location: str = None, coordinates: tuple[float,float] = None) -> dict:
     '''
     extrae data en formato json de la api de openWeather
 
