@@ -44,7 +44,7 @@ sacar_screenshot(html=html)
 ## Result
 
 ![result 1](images/test_Bundaberg.png)
-![result 1](images/test_Mackay.png)
+![result 1](images/test_Mackay.jpg)
 
 Very cloudy at Mackay as we can see.
 
