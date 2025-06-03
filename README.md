@@ -62,7 +62,7 @@ Contributions are welcome! If you have improvements or fixes, please send a pull
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+This project is licensed under the MIT License. Do whatever you want.
 
 ## Contact
 
