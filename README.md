@@ -2,6 +2,9 @@
 What I use in my AI (Artificial Idiot) to get the weather of my, or any location.
 
 
+Here I apply API requests, data preprocessing and transformation, HTML parsing and generation, pythonic elegance, and asthetic sence of design.
+
+
 ## Usage
 
 Since the package is called _pornos_ (my keyboard is half working and I misspelled *pronos*), I call the
