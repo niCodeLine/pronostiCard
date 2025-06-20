@@ -6,19 +6,21 @@ Here I apply API requests, data preprocessing and transformation, HTML parsing a
 
 # Usage
 
-Since the package is called _pronos_, I call the
-function _tico_, forming then the word _pronos.tico_, meaning _forecast_ in spanish.  
+Since the package is called _pronos_, we call the
+function _tico_, forming then the word _pronos.tico_, meaning _forecast_ in spanish. I speak Spanish.
 
 ```python
 import pronoso
 
 pronos.tico(chat_id = 696969, lugar = 'mackay')
 ```
+The _chat_id_ arguments is to compare the location asked with the one saved for the user. That way returns the name of the location better.
+
 
 ## Process...
 
 
-It checks if the input _lugar_ (place) is a name or the coordinates of some place and continues with:
+It checks if the input _lugar_ (place) is a name or the coordinates of some place, and continues by calling the function related to the API of OpenWeather:
 
 ```python
 jsonData = obtener_pronostico(location = 'mackay')
@@ -33,7 +35,7 @@ float: lon = 149.1851
 jsonData = obtener_pronostico(coodinates = (lat, lon))
 ```
 
-we proceed by calling the class **Owo** to clean the data getting the forcast of today and the next 5 days:
+it proceeds by calling the class **Owo** to clean the data getting the forcast of today and the next 5 days:
 
 ```python
 owo = Owo(jsonData)
