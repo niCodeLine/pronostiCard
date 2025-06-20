@@ -15,7 +15,7 @@ import pronoso
 pronos.tico(chat_id = 696969, lugar = 'mackay')
 ```
 
-## Process
+## Process...
 
 
 It checks if the input _lugar_ (place) is a name or the coordinates of some place and continues with:
