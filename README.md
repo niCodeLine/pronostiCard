@@ -4,8 +4,7 @@ What I use in my AI (Artificial Idiot) to get the weather of my, or any location
 
 Here I apply API requests, data preprocessing and transformation, HTML parsing and generation, pythonic elegance, and asthetic sence of design.
 
-
-## Process
+# Usage
 
 Since the package is called _pronos_, I call the
 function _tico_, forming then the word _pronos.tico_, meaning _forecast_ in spanish.  
@@ -15,7 +14,9 @@ import pronoso
 
 pronos.tico(chat_id = 696969, lugar = 'mackay')
 ```
-     
+
+## Process
+
 
 It checks if the input _lugar_ (place) is a name or the coordinates of some place and continues with:
 
