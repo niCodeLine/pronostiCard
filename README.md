@@ -14,13 +14,13 @@ import pronoso
 
 pronos.tico(chat_id = 696969, lugar = 'mackay')
 ```
-The _chat_id_ arguments is to compare the location asked with the one saved for the user. That way returns the name of the location better.
+The _chat_id_ argument is used to compare the location asked with the one saved for the user. That way it returns the name of the location better.
 
 
 ## Process...
 
 
-It checks if the input _lugar_ (place) is a name or the coordinates of some place, and continues by calling the function related to the API of OpenWeather:
+It checks if the input _lugar_ (place) is a name or the coordinates of some place, and continues by calling the function related to the API of OpenWeatherMap:
 
 ```python
 jsonData = obtener_pronostico(location = 'mackay')
