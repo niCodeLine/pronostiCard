@@ -11,7 +11,6 @@ from recordat import numero_a_diaSemana, numero_a_mes # conversiones
 
 from constants import carpeta, apikeyOpenWeather # aqui guardo valores generales, como la ubicacion "carpeta" donde están todos los achivo
 
-g = '~'
 
 # API key de OpenWeather
 API_KEY = apikeyOpenWeather # consiguete una
