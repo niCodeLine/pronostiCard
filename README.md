@@ -10,7 +10,7 @@ Since the package is called _pronos_, we call the
 function _tico_, forming then the word _pronos.tico_, meaning _forecast_ in spanish. I speak Spanish.
 
 ```python
-import pronoso
+import pronos
 
 pronos.tico(chat_id = 696969, lugar = 'mackay')
 ```
