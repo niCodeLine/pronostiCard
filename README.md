@@ -12,7 +12,7 @@ function _tico_, forming then the word _pronos.tico_, meaning _forecast_ in span
 ```python
 import pronos
 
-pronos.tico(chat_id = 7654321, lugar = 'mackay')
+pronos.tico(chat_id = 7654321, lugar = 'byron bay')
 ```
 The _chat_id_ argument is used to compare the location given by the API with the one saved for the user, if _location_ is not given. That way it returns the name of the location better, because sometimes de API fails with nameing.
 
@@ -23,7 +23,7 @@ The _chat_id_ argument is used to compare the location given by the API with the
 It checks if the input _lugar_ (place) is a name or the coordinates of some place, and continues by calling the function related to the API of OpenWeatherMap:
 
 ```python
-jsonData = obtener_pronostico(location = 'mackay')
+jsonData = obtener_pronostico(location = 'byron bay')
 ```
 
 or
@@ -63,7 +63,7 @@ sacar_screenshot(html=html)
 </p>
 
 <p align="center">
-  <img src="images/test_Mackay.jpg" width="400">
+  <img src="images/test_Yeppoon.jpg" width="400">
 </p>
 
 
