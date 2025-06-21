@@ -43,8 +43,21 @@ owo = Owo(jsonData)
 datosDia = owo.arreglo_del_dia()
 datos5Dias = owo.arreglo_5_dias()
 ```
+Inside the functions it goes through a probability analysis to produce the texts of the forecast, picking randomly one of the options, to make the text feel more natural. As the follow shows:
 
-from here we create the HTML script, and take the screenshot of the card:
+```python
+def prob_a_palabra(val: int) -> str:
+    if val <= 10:
+        return rc(['despejado', 'claro', 'sin nubes'])
+    elif val <= 30:
+        return rc(['con un par de nubecitas', 'casi ni nublado'])
+    elif val <= 60:
+        return rc(['un poco nublado', 'algo nublado', 'nubladito'])
+    else:
+        return rc(['nublado', 'muy nublado', 'tapado en nubes', 'blanco, o gris'])
+```
+
+Now it proceeds by creating the HTML script, and take the screenshot of the card:
 
 ```python
 html = generar_html(dataDia=datosDia, data5dias=datos5Dias)
@@ -52,6 +65,8 @@ html = generar_html(dataDia=datosDia, data5dias=datos5Dias)
 sacar_screenshot(html=html)
 ```
 
+
+For future updates I'm thinking on adding a random "theme" picker, to make the colors more dynamic.
 
 ## Result
 
