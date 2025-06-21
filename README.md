@@ -12,9 +12,9 @@ function _tico_, forming then the word _pronos.tico_, meaning _forecast_ in span
 ```python
 import pronos
 
-pronos.tico(chat_id = 696969, lugar = 'mackay')
+pronos.tico(chat_id = 7654321, lugar = 'mackay')
 ```
-The _chat_id_ argument is used to compare the location asked with the one saved for the user. That way it returns the name of the location better.
+The _chat_id_ argument is used to compare the location given by the API with the one saved for the user, if _location_ is not given. That way it returns the name of the location better, because sometimes de API fails with nameing.
 
 
 ## Process...
