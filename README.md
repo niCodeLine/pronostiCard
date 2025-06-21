@@ -23,7 +23,7 @@ The _chat_id_ argument is used to compare the location given by the API with the
 It checks if the input _lugar_ (place) is a name or the coordinates of some place, and continues by calling the function related to the API of OpenWeatherMap:
 
 ```python
-jsonData = obtener_pronostico(location = 'byron bay')
+jsonData = obtener_pronostico(location = lugar)
 ```
 
 or
