@@ -60,6 +60,10 @@ sacar_screenshot(html=html)
 </p>
 
 <p align="center">
+  <img src="images/test_Calavos.jpg" width="400">
+</p>
+
+<p align="center">
   <img src="images/test_Yeppoon.jpg" width="400">
 </p>
 
