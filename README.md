@@ -66,6 +66,10 @@ sacar_screenshot(html=html)
   <img src="images/test_Yeppoon.jpg" width="400">
 </p>
 
+<p align="center">
+  <img src="images/test_Mackay.jpg" width="400">
+</p>
+
 
 Very cloudy at Mackay as we can see.
 
