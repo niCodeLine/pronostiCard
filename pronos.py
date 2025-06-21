@@ -11,7 +11,6 @@ from recordat import numero_a_diaSemana, numero_a_mes # conversiones
 
 from constants import carpeta, apikeyOpenWeather # aqui guardo valores generales, como la ubicacion "carpeta" donde están todos los achivo
 
-
 # API key de OpenWeather
 API_KEY = apikeyOpenWeather # consiguete una
 
@@ -50,14 +49,14 @@ def tico(chat_id: int, lugar: str = None) -> str:
         datosDia = owo.arreglo_del_dia()
         datosSemana = owo.arreglo_5_dias()
     except:
-        return (jsonWeather, lat, lon, lugar)
+        return f'problema: {(jsonWeather, lat, lon, lugar)}'
 
 
     # generamos la plantilla con el html
     html = generar_html(dataDia=datosDia, data5dias=datosSemana)
 
     # y hacemo el scrinchot, devolviendo la ruta al achivo
-    return sacar_screenshot(html=html, nombreImagen=chat_id)
+    return sacar_screenshot(html=html, nombreImagen=str(chat_id))
 
 def sacar_screenshot(html: str, nombreImagen: str = 'img', file: bool = False):
     '''
@@ -422,7 +421,7 @@ class Owo:
         self.MaxMinTempVals = (maxim, minim)
         return (maxim, minim)
 
-    def filtro_data_dia(self, data: list) -> tuple:
+    def filtro_data_dia(self, data: list) -> list:
         '''
         para tener toda la data solo del dia q queremos
 
@@ -661,7 +660,7 @@ class Owo:
                 return 'posiblemente llueve'
             elif val <= 80:
                 return 'es muy probable que llueva'
-            elif val <= 100:
+            else:
                 return 'llueve, seguro'
 
         dia = [0]
@@ -697,7 +696,7 @@ class Owo:
         
         return redaccion, popGeneral
 
-    def _max_humidity(self, data: list) -> list:
+    def _max_humidity(self, data: list) -> tuple:
         '''
         simple as that
 
@@ -721,7 +720,7 @@ class Owo:
 
         return (maxHum, textHum)
 
-    def _max_vientos(self, speeds: list, degs: list) -> list:
+    def _max_vientos(self, speeds: list, degs: list) -> tuple:
         '''
         devuelve la velocidad de viento max, y la dirección respectiva
 
