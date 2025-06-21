@@ -54,9 +54,6 @@ sacar_screenshot(html=html)
 
 
 ## Result
-<p align="center">
-  <img src="images/test_Bundaberg.png" width="400">
-</p>
 
 <p align="center">
   <img src="images/test_ByronBay.jpg" width="400">
