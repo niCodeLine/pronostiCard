@@ -57,6 +57,8 @@ def prob_a_palabra(val: int) -> str:
         return rc(['nublado', 'muy nublado', 'tapado en nubes', 'blanco, o gris'])
 ```
 
+The Icon is selected by getting the different forecasts of the day and deciding what's the important issue. It does it in the functions **_icon** with **_llueve**, having as hierarchy: day-rain, night-rain, day-clouds, sunny, ...   
+
 Now it proceeds by creating the HTML script, and take the screenshot of the card:
 
 ```python
